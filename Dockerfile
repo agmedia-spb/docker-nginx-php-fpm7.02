@@ -61,7 +61,6 @@ RUN apt-get update && \
     php7.1-ldap \
     php7.1-gd \
     php7.1-xdebug && \
-    echo "extension=amqp.so" > /etc/php/7.1/cli/conf.d/10-amqp.ini && \
     echo "extension=amqp.so" > /etc/php/7.1/fpm/conf.d/10-amqp.ini && \
     rm -f /etc/php/7.1/mods-available/xdebug.ini
 
